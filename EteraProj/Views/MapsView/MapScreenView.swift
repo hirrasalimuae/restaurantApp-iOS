@@ -77,24 +77,3 @@ struct MapScreenView: View {
     }
 }
 
-// Custom Map Pin View
-struct MapPinView: View {
-    let restaurant: Restaurant
-    let isSelected: Bool
-    
-    var body: some View {
-        VStack(spacing: 4) {
-              
-                Image(restaurant.imageNames.first ?? "placeholder")
-                    .resizable()
-                    .frame(width: isSelected ? 65 : 50, height: isSelected ?  65 : 50)
-                    .clipShape(Circle())
-                    .overlay(
-                        Circle()
-                            .stroke(isSelected ? Color.glowPurple : Color.white, lineWidth: 3)  // ← Correct syntax
-                    )
-                    .shadow(radius: 3)
-           
-        }
-    }
-}

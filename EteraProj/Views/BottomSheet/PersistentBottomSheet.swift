@@ -12,7 +12,7 @@ struct PersistentBottomSheet: View {
     @State private var showBottomGrabber = false
     
     // Constants for Sheet Heights
-    private let expandedHeightRatio: CGFloat = 0.9 // 90% of screen height
+    private let expandedHeightRatio: CGFloat = 0.85 // 80% of screen height
     private let peekingHeightRatio: CGFloat = 0.47 // 40% of screen height
     
     // Calculated Height

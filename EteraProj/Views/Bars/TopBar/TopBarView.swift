@@ -53,7 +53,6 @@ struct TopBarView: View {
                                 .shadow(color: Color.glowPurple.opacity(0.6), radius: 3, x:0, y: 3)
                 
                                 .padding(.trailing, 16) // Added a trailing padding for the search bar
-                                // 🛑 END MODIFIED SEARCH BAR CONTAINER 🛑
             }
             
             FilterBarView(searchText: $searchText).padding([.top, .bottom], 10)
